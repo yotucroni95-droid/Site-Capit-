@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header" id="inicio">
+  <header class="header" id="inicio" data-grupo="WhatsApp">
     <nav class="nav container" aria-label="Navegação principal">
       <a class="brand" href="#inicio" aria-label="César Capitó Advogados — início">
         <img src="assets/logo.png" alt="Logo César Capitó Advogados" />
@@ -27,21 +27,21 @@
         <a href="#atuacao">Áreas de atuação</a>
         <a href="#unidades">Unidades</a>
         <a href="#contato">Contato</a>
-        <a class="btn btn-small" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+        <a class="btn btn-small" data-whats="contato.whatsapp" data-rotulo="WhatsApp do escritório" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" data-grupo="Topo da página">
       <div class="hero-glow"></div>
       <div class="container hero-grid">
         <div class="hero-content reveal">
-          <span class="eyebrow">Atendimento jurídico em Pernambuco</span>
-          <h1>Orientação jurídica com ética, clareza e responsabilidade.</h1>
-          <p>Atuação em diferentes áreas do Direito, com atendimento presencial em Lagoa do Ouro e Garanhuns.</p>
+          <span class="eyebrow" data-editavel="topo.chamada" data-rotulo="Frase pequena acima do título">Atendimento jurídico em Pernambuco</span>
+          <h1 data-editavel="topo.titulo" data-rotulo="Título principal">Orientação jurídica com ética, clareza e responsabilidade.</h1>
+          <p data-editavel="topo.texto" data-rotulo="Texto do topo">Atuação em diferentes áreas do Direito, com atendimento presencial em Lagoa do Ouro e Garanhuns.</p>
           <div class="hero-actions">
-            <a class="btn" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer">Solicitar atendimento</a>
+            <a class="btn" data-whats="contato.whatsapp" data-rotulo="WhatsApp do escritório" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer">Solicitar atendimento</a>
             <a class="text-link" href="#atuacao">Conheça a atuação <span>→</span></a>
           </div>
         </div>
@@ -52,39 +52,39 @@
       </div>
     </section>
 
-    <section class="section" id="escritorio">
+    <section class="section" id="escritorio" data-grupo="O escritório">
       <div class="container split">
         <div class="section-heading reveal">
           <span class="eyebrow dark">César Capitó Advogados</span>
-          <h2>Atendimento jurídico próximo, técnico e humanizado.</h2>
+          <h2 data-editavel="escritorio.titulo" data-rotulo="Título">Atendimento jurídico próximo, técnico e humanizado.</h2>
         </div>
         <div class="section-copy reveal">
-          <p>O escritório César Capitó Advogados oferece orientação e acompanhamento jurídico para pessoas físicas e empresas, sempre com análise individualizada e comunicação objetiva.</p>
-          <p>Cada demanda é tratada com sigilo, prudência e compromisso profissional, respeitando as particularidades do caso e os princípios éticos da advocacia.</p>
+          <p data-editavel="escritorio.texto1" data-rotulo="Primeiro parágrafo">O escritório César Capitó Advogados oferece orientação e acompanhamento jurídico para pessoas físicas e empresas, sempre com análise individualizada e comunicação objetiva.</p>
+          <p data-editavel="escritorio.texto2" data-rotulo="Segundo parágrafo">Cada demanda é tratada com sigilo, prudência e compromisso profissional, respeitando as particularidades do caso e os princípios éticos da advocacia.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="atuacao">
+    <section class="section section-dark" id="atuacao" data-grupo="Áreas de atuação">
       <div class="container">
         <div class="section-heading centered reveal">
           <span class="eyebrow">Áreas de atuação</span>
-          <h2>Suporte jurídico para diferentes necessidades.</h2>
+          <h2 data-editavel="atuacao.titulo" data-rotulo="Título da seção">Suporte jurídico para diferentes necessidades.</h2>
           <p>Conheça algumas das áreas atendidas pelo escritório.</p>
         </div>
 
         <div class="cards">
-          <article class="card reveal"><span>01</span><h3>Direito Previdenciário</h3><p>Orientação sobre aposentadorias, benefícios, revisões e demandas relacionadas ao INSS.</p></article>
-          <article class="card reveal"><span>02</span><h3>Direito Trabalhista</h3><p>Assistência em questões envolvendo vínculos de trabalho, verbas, direitos e obrigações.</p></article>
-          <article class="card reveal"><span>03</span><h3>Direito Cível</h3><p>Acompanhamento em contratos, obrigações, indenizações e conflitos de natureza civil.</p></article>
-          <article class="card reveal"><span>04</span><h3>Direito de Família</h3><p>Orientação em divórcio, guarda, pensão alimentícia, união estável e sucessões.</p></article>
-          <article class="card reveal"><span>05</span><h3>Direito do Consumidor</h3><p>Atuação em cobranças indevidas, falhas na prestação de serviços e relações de consumo.</p></article>
-          <article class="card reveal"><span>06</span><h3>Consultoria Jurídica</h3><p>Análise preventiva de situações e documentos para decisões mais seguras e conscientes.</p></article>
+          <article class="card reveal"><span>01</span><h3 data-editavel="area01.nome" data-rotulo="Área 01: nome">Direito Previdenciário</h3><p data-editavel="area01.texto" data-rotulo="Área 01: descrição">Orientação sobre aposentadorias, benefícios, revisões e demandas relacionadas ao INSS.</p></article>
+          <article class="card reveal"><span>02</span><h3 data-editavel="area02.nome" data-rotulo="Área 02: nome">Direito Trabalhista</h3><p data-editavel="area02.texto" data-rotulo="Área 02: descrição">Assistência em questões envolvendo vínculos de trabalho, verbas, direitos e obrigações.</p></article>
+          <article class="card reveal"><span>03</span><h3 data-editavel="area03.nome" data-rotulo="Área 03: nome">Direito Cível</h3><p data-editavel="area03.texto" data-rotulo="Área 03: descrição">Acompanhamento em contratos, obrigações, indenizações e conflitos de natureza civil.</p></article>
+          <article class="card reveal"><span>04</span><h3 data-editavel="area04.nome" data-rotulo="Área 04: nome">Direito de Família</h3><p data-editavel="area04.texto" data-rotulo="Área 04: descrição">Orientação em divórcio, guarda, pensão alimentícia, união estável e sucessões.</p></article>
+          <article class="card reveal"><span>05</span><h3 data-editavel="area05.nome" data-rotulo="Área 05: nome">Direito do Consumidor</h3><p data-editavel="area05.texto" data-rotulo="Área 05: descrição">Atuação em cobranças indevidas, falhas na prestação de serviços e relações de consumo.</p></article>
+          <article class="card reveal"><span>06</span><h3 data-editavel="area06.nome" data-rotulo="Área 06: nome">Consultoria Jurídica</h3><p data-editavel="area06.texto" data-rotulo="Área 06: descrição">Análise preventiva de situações e documentos para decisões mais seguras e conscientes.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="unidades">
+    <section class="section" id="unidades" data-grupo="Unidades">
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow dark">Onde estamos</span>
@@ -94,40 +94,40 @@
         <div class="locations">
           <article class="location-card reveal">
             <div class="location-number">01</div>
-            <h3>Lagoa do Ouro</h3>
-            <p>Rua Cap. Amador Monteiro, nº 67<br />Centro, Lagoa do Ouro – PE</p>
+<h3 data-editavel="unidade01.cidade" data-rotulo="Unidade 01: cidade">Lagoa do Ouro</h3>
+<p data-editavel="unidade01.endereco" data-rotulo="Unidade 01: endereço" data-linhas>Rua Cap. Amador Monteiro, nº 67<br />Centro, Lagoa do Ouro – PE</p>
             <div class="location-actions">
-              <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cap.+Amador+Monteiro+67+Centro+Lagoa+do+Ouro+PE" target="_blank" rel="noopener noreferrer">Ver no mapa →</a>
-              <a href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20informações%20sobre%20o%20atendimento%20na%20unidade%20de%20Lagoa%20do%20Ouro." target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+              <a data-mapa="unidade01.endereco" href="https://www.google.com/maps/search/?api=1&query=Rua+Cap.+Amador+Monteiro+67+Centro+Lagoa+do+Ouro+PE" target="_blank" rel="noopener noreferrer">Ver no mapa →</a>
+              <a data-whats="contato.whatsapp" data-rotulo="WhatsApp do escritório" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20informações%20sobre%20o%20atendimento%20na%20unidade%20de%20Lagoa%20do%20Ouro." target="_blank" rel="noopener noreferrer">WhatsApp →</a>
             </div>
           </article>
 
           <article class="location-card reveal">
             <div class="location-number">02</div>
-            <h3>Garanhuns</h3>
-            <p>Rua Gen. Dantas Barreto, nº 236<br />Garanhuns – PE</p>
+<h3 data-editavel="unidade02.cidade" data-rotulo="Unidade 02: cidade">Garanhuns</h3>
+<p data-editavel="unidade02.endereco" data-rotulo="Unidade 02: endereço" data-linhas>Rua Gen. Dantas Barreto, nº 236<br />Garanhuns – PE</p>
             <div class="location-actions">
-              <a href="https://www.google.com/maps/search/?api=1&query=Rua+Gen.+Dantas+Barreto+236+Garanhuns+PE" target="_blank" rel="noopener noreferrer">Ver no mapa →</a>
-              <a href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20informações%20sobre%20o%20atendimento%20na%20unidade%20de%20Garanhuns." target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+              <a data-mapa="unidade02.endereco" href="https://www.google.com/maps/search/?api=1&query=Rua+Gen.+Dantas+Barreto+236+Garanhuns+PE" target="_blank" rel="noopener noreferrer">Ver no mapa →</a>
+              <a data-whats="contato.whatsapp" data-rotulo="WhatsApp do escritório" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20informações%20sobre%20o%20atendimento%20na%20unidade%20de%20Garanhuns." target="_blank" rel="noopener noreferrer">WhatsApp →</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="contact section" id="contato">
+    <section class="contact section" id="contato" data-grupo="Contato">
       <div class="container contact-box reveal">
         <div>
           <span class="eyebrow">Entre em contato</span>
-          <h2>Precisa de orientação jurídica?</h2>
-          <p>Envie uma mensagem para solicitar informações sobre atendimento.</p>
+          <h2 data-editavel="contato.titulo" data-rotulo="Título do contato">Precisa de orientação jurídica?</h2>
+          <p data-editavel="contato.texto" data-rotulo="Texto do contato">Envie uma mensagem para solicitar informações sobre atendimento.</p>
         </div>
-        <a class="btn btn-light" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp</a>
+        <a class="btn btn-light" data-whats="contato.whatsapp" data-rotulo="WhatsApp do escritório" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp</a>
       </div>
     </section>
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+  <a class="whatsapp-float" data-whats="contato.whatsapp" data-rotulo="WhatsApp do escritório" href="https://wa.me/5587999178808?text=Olá%2C%20gostaria%20de%20solicitar%20informações%20sobre%20atendimento%20jurídico." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.39c-.23-.12-1.37-.68-1.58-.75-.21-.08-.37-.12-.52.12-.15.23-.6.75-.73.9-.13.16-.27.18-.5.06-.23-.12-.98-.36-1.86-1.15-.69-.61-1.15-1.37-1.29-1.6-.13-.23-.01-.36.1-.47.1-.1.23-.27.35-.41.12-.13.15-.23.23-.39.08-.15.04-.29-.02-.41-.06-.12-.52-1.26-.71-1.73-.19-.45-.38-.39-.52-.4h-.44c-.15 0-.41.06-.62.29-.21.23-.81.79-.81 1.93s.83 2.24.94 2.39c.12.15 1.63 2.49 3.95 3.49.55.24.98.38 1.32.49.55.18 1.06.15 1.46.09.45-.07 1.37-.56 1.56-1.1.19-.54.19-1 .13-1.1-.05-.1-.21-.15-.44-.27zM16.04 5.33A10.54 10.54 0 0 0 7.1 21.46L5.33 26.67l5.39-1.72a10.55 10.55 0 1 0 5.32-19.62zm0 19.18c-1.65 0-3.27-.45-4.68-1.31l-.34-.2-3.2 1.02 1.05-3.12-.22-.35a8.64 8.64 0 1 1 7.39 3.96z"/></svg>
   </a>
 
@@ -138,7 +138,7 @@
       </div>
       <div>
         <strong>Contato</strong>
-        <a href="tel:+5587999178808">(87) 99917-8808</a>
+        <a href="tel:+5587999178808" data-tel="contato.whatsapp" data-tel-texto>(87) 99917-8808</a>
       </div>
       <div>
         <strong>Unidades</strong>
@@ -153,5 +153,6 @@
   </footer>
 
   <script src="script.js"></script>
+<script type="module" src="conteudo.js?v=1"></script>
 </body>
 </html>
